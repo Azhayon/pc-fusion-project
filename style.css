@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 5%;
+    width: 100%;
+    background-color: rgba(16, 23, 42, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    border: solid rgba(132, 167, 255, 1);
+}
+
+/* #logo{
+
+} */
+
+#links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(16, 24, 40, 1);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#left{
+    height: 95%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+#left h3{
+    padding: 20px;
+}
+
+#left h3 span{
+    background-color: rgba(19, 34, 71, 1);
+    color: rgba(65, 152, 232, 1);
+    display: inline-block;
+    height: 35px;
+    width: 300px;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+}
+
+#left h1,p{
+    color: rgb(255, 255, 255);
+}
+
+#left h1 span{
+    color: rgba(147, 29, 250, 1);
+    display: block;
+}
+
+.btn-build{
+    border: 0;
+    line-height: 3.5;
+    padding: 0 25px;
+    font-size: 20px;
+    background-color: rgba(141, 38, 250, 1);
+    color: white;
+}
+
+#right{
+    height: 95%;
+    width: 60%;
+}
+
