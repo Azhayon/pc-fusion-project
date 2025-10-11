@@ -111,7 +111,7 @@ html, body{
 
 #left{
     height: 90%;
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -128,15 +128,18 @@ html, body{
     margin-bottom: 30px;
 }
 
-#left-bottom button{
-    margin-right: 15px;
+#left-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.btn-ai{
+#left-top h3{
     border: 0;
     line-height: 3;
-    padding: 0 30px;
-    font-size: 18px;
+    padding: 0 40px;
+    font-size: 20px;
     font-weight: bold;
     background-color: rgba(19, 34, 71, 1);
     color: rgba(65, 152, 232, 1);
@@ -159,29 +162,48 @@ html, body{
     display: block;
 }
 
-.btn-build{
+.btn-ai{
     border: 0;
     line-height: 3.5;
-    padding: 0 25px;
+    padding: 0 148px;
     font-size: 20px;
     background-color: rgba(141, 38, 250, 1);
     color: white;
     border-radius: 20px;
     font-weight: bold;
+    display: block;
 }
 
+#btn-row{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-build,
 .btn-pre-build{
     border: 0;
     line-height: 3.5;
     padding: 0 25px;
     font-size: 20px;
-    background-color: rgba(37, 47, 72, 1);
+    background-color: rgba(0, 18, 181, 1);
     color: white;
     border-radius: 20px;
     font-weight: bold;
 }
 
+.btn-build{
+    background-color: rgba(0, 18, 181, 1);
+}
+
+.btn-pre-build{
+    background-color: rgba(37, 47, 72, 1);
+}
+
 #right{
     height: 95%;
-    width: 60%;
+    width: 55%;
+}
+
+#right img{
+    border-radius: 20px;
 }
