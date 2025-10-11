@@ -135,6 +135,10 @@ html, body{
     gap: 20px;
 }
 
+#left-bottom a{
+    text-decoration: none;
+}
+
 #left-top h3{
     border: 0;
     line-height: 3;
@@ -162,7 +166,7 @@ html, body{
     display: block;
 }
 
-.btn-ai{
+#btn-ai{
     border: 0;
     line-height: 3.5;
     padding: 0 148px;
@@ -179,8 +183,8 @@ html, body{
     gap: 20px;
 }
 
-.btn-build,
-.btn-pre-build{
+#btn-build,
+#btn-pre-build{
     border: 0;
     line-height: 3.5;
     padding: 0 25px;
@@ -191,12 +195,25 @@ html, body{
     font-weight: bold;
 }
 
-.btn-build{
+#btn-build{
     background-color: rgba(0, 18, 181, 1);
 }
 
-.btn-pre-build{
+#btn-pre-build{
     background-color: rgba(37, 47, 72, 1);
+}
+
+.btn{
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 #right{
