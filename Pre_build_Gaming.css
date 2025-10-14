@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +49,7 @@ body {
   color: #84a7ff;
 }
 
-/* 🔍 Search Box */
+/*  Search Box */
 #search-container {
   position: relative;
   width: 40px;
@@ -145,17 +146,13 @@ body {
   position: relative;
   z-index: 3;
   margin-top: 80px;
-
- 
   display: flex;
-  justify-content: flex-start;   
-  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
-  width: 100%;
-  padding-left: 120px;          
 }
-/*Common Card Style */
+
+/* Common Card Style (bigger & clearer) */
 .card {
   width: 550px;            
   height: 440px;          
@@ -176,59 +173,85 @@ body {
   transform: translateY(-8px);
 }
 
-/* ---------- Editing Build ---------- */
-.editing-build {
+/* ---------- Budget Gaming ---------- */
+.budget-gaming {
   border: 1px solid rgba(10, 15, 28, 1);
   box-shadow: 0 10px 35px rgba(149, 204, 255, 0.3);
-  background-color: rgba(10, 15, 28, 1);
-  border-radius: 32px;
-  width: 550px;
-  height: 440px;
-  padding: 50px 60px;
-  backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.editing-build:hover {
-  transform: translateY(-8px);
-}
-.editing-title {
+.budget-title {
   color: #84a7ff;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
 }
-
-.row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.editing-label1,
-.editing-label2,
-.editing-label3,
-.editing-label4 {
+.budget-label1,
+.budget-label2,
+.budget-label3,
+.budget-label4
+{
   color: #ffffff;
   font-weight: 600;
-  width: 160px; 
+  width: 160px;
   display: inline-block;
   font-size: 15px; 
 }
 
-.editing-value1,
-.editing-value2,
-.editing-value3,
-.editing-value4 {
-  flex-basis: 60%;         
-  text-align: right;       
+.budget-value1,
+.budget-value2,
+.budget-value3,
+.budget-value4
+ {
   color: #ffffff;
-  font-size: 16px;
-  padding-right: 25px;    
+  font-size: 14px; 
+  text-align: right;
+  flex: 1;
+  padding-right: 25px;
 }
+
+/* ---------- Midrange Gaming ---------- */
+.midrange-gaming {
+  border: 1px solid rgba(10, 15, 28, 1);
+  box-shadow: 0 10px 35px rgba(149, 204, 255, 0.3);
+}
+.midrange-title {
+  color:  #84a7ff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.midrange-label1,
+.midrange-label2,
+.midrange-label3,
+.midrange-label4 {
+  color: #ffffff;
+  font-weight: 600;
+  width: 160px;
+  display: inline-block;
+  font-size: 15px; 
+}
+.midrange-value1,
+.midrange-value2,
+.midrange-value3,
+.midrange-value4 {
+  color: #ffffff;
+  font-size: 14px; 
+  text-align: right;
+  flex: 1;
+  
+}
+
+/* ---------- Label & Value Row Spacing ---------- */
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 100px; 
+}
+
 /* ---------- Buttons ---------- */
-.btn-editing {
+.btn-budget,
+.btn-midrange {
   background-color: #ffffff;
   color: #000;
   border: none;
@@ -240,7 +263,8 @@ body {
   width: 200px;
   transition: background-color 0.3s ease, transform 0.2s;
 }
-.btn-editing:hover {
+.btn-budget:hover,
+.btn-midrange:hover {
   background-color: #234291;
   color: #ffffff;
   transform: scale(1.03);
