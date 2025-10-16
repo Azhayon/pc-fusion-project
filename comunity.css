@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: rgba(16, 23, 42, 1);
 }
 
-#nav{
+#nav {
     height: 60px;
     width: 100%;
     background-color: rgba(16, 23, 42, 1);
@@ -26,33 +27,34 @@ html, body{
     top: 0;
 }
 
-.nav-section{
+.nav-section {
     display: flex;
     align-items: center;
 }
 
-.left, .right{
+.left,
+.right {
     width: 300px;
 }
 
-.center{
+.center {
     flex: 1;
     justify-content: center;
 }
 
-#links{
+#links {
     display: flex;
     /* justify-content: center;
     flex: 1; */
 }
 
-#links a{
+#links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 15px;
 }
 
-#search-container{
+#search-container {
     position: relative;
     width: 40px;
     height: 40px;
@@ -68,7 +70,7 @@ html, body{
     overflow: hidden;
 }
 
-#search-container input{
+#search-container input {
     flex: 1;
     height: 100%;
     padding: 0 10px;
@@ -80,18 +82,30 @@ html, body{
     display: none;
 }
 
-#search-container .fa{
+#search-container .fa {
     color: white;
     font-size: 18px;
     padding-left: 10px;
     flex-shrink: 0;
 }
 
-#search-container:hover{
+#search-container:hover {
     width: 250px;
     cursor: pointer;
 }
 
-#search-container:hover input{
+#search-container:hover input {
     display: block;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 130px;
+    color: white;
+}
+
+.title h1 {
+    font-size: 40px;
 }
