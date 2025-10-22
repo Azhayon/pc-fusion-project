@@ -17,9 +17,8 @@ html, body{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    border: solid rgba(132, 167, 255, 1);
-    padding: 0 20px;
-    border: solid rgba(132, 167, 255, 1);
+    padding: 10px 20px;
+    border: 1px solid rgba(132, 167, 255, 1);
     box-sizing: border-box;
     z-index: 1000;
 }
@@ -35,6 +34,9 @@ html, body{
 
 .left, .right{
     width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 .center{
@@ -60,29 +62,34 @@ html, body{
     height: 40px;
     background-color: rgba(16, 23, 42, 1);
     border-radius: 20px;
-    border: 2px solid white;
-    /* padding: 0; */
-    /* margin-left: auto; */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: flex-end;
     transition: width 0.4s ease;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #search-container input{
-    flex: 1;
+    position: absolute;
+    right: 40px;
+    width: 0;
+    opacity: 0;
     height: 100%;
     padding: 0 10px;
     border: none;
     outline: none;
     font-size: 16px;
-    color: white;
-    background-color: transparent;
-    display: none;
+    color: black;
+    background: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: width 0.4s ease, opacity 0.3s ease;
+    /* flex: 1; */
+    /* background-color: transparent; */
+    /* display: none; */
 }
 
-#search-container .fa{
+/* #search-container .fa{
     color: white;
     font-size: 18px;
     padding-left: 10px;
@@ -96,6 +103,34 @@ html, body{
 
 #search-container:hover input{
     display: block;
+} */
+
+#search-container.active{
+    width: 250px;
+}
+
+#search-container.active input{
+    width: 210px;
+    opacity: 1;
+}
+
+#search-container .fa{
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3 ease;
+}
+
+#search-container.active .fa{
+    color: black;
+}
+
+#user i, #cart i{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 #main{
