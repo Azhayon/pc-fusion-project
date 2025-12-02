@@ -61,16 +61,12 @@ body {
   color: #fff;
 }
 
-
-.gender-fields button {
-  flex: 1;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  background: transparent;
-  color: #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+/* doing change Avijit */
+.gender-fields {
+  display: flex;
+  margin-right: 80px;
+  padding-top: 15px;
+  padding-right:100px;
 }
 
 .gender-fields button:hover {
