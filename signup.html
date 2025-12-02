@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up</title>
   <link rel="stylesheet" href="signup.css" />
 </head>
+
 <body>
   <div class="signup-field">
     <form class="form" action="code.php" method="post">
       <div class="name">
         <input type="text" name="fname" id="fname" placeholder="First name" required />
-        <input type="text" name="surname" id="surname" placeholder="Surname" required />
+        <span id="efname"></span>
       </div>
+
+      <div class="name">
+        <input type="text" name="surname" id="surname" placeholder="Surname" required />
+        <span id="esurname"></span>
+      </div>
+
 
 
       <!-- Change by Avijit -->
       <label class="section-label">Date of Birth</label>
-      
+
       <div class="dob-fields">
-        <input type="date" name="dob" id="dob" >
+        <input type="date" name="dob" id="dob">
+        <span id="edob"></span>
         <!-- <input type="number" name="dob" id="dob" placeholder="29" min="1" max="31" required /> -->
 
         <!-- <select required name="dob" id="dob">
@@ -44,7 +53,7 @@
 
       <!-- Change by Avijit -->
       <label class="section-label">Gender</label>
-      <div class="gender-fields" >
+      <div class="gender-fields">
         <!-- <button type="button">Male</button>
         <button type="button">Female</button>
         <button type="button">Custom</button> -->
@@ -56,12 +65,30 @@
         <label for="genderO">Other</label>
       </div>
 
-      <input type="text" name="email" id="email" placeholder="Email address" required />
-      <input type="password" name="pass" id="pass" placeholder="Password" required />
+      <div class="name">
+        <input type="text" name="email" id="email" placeholder="Email address" required />
+        <span id="eemail"></span>
+      </div>
+      <div class="name">
+        <input type="password" name="pass" id="pass" placeholder="Password" required />
+        <span id="epass"></span>
 
-      <button type="submit" class="signup-btn">Sign Up</button>
+      </div>
+
+
+      <!-- <button type="submit" class="signup-btn" >Sign Up</button> -->
+      <button type="submit" class="signup-btn" onclick="fun()">Sign Up</button>
+
+      <!-- <input type="button" value="Sign Up" onclick="fun()"> -->
+
+
       <p class="login-text"><a href="login.html">Already have an account?</a></p>
+
+
+      <script src="signup-validation.js"></script>
+
     </form>
   </div>
 </body>
+
 </html>
