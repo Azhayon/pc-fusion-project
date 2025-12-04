@@ -11,17 +11,19 @@
 <body>
 
 
-    <form action="login" class="login-form" id="login-form">
+    <form action="login-val.php" class="login-form" id="login-form" method="post">
         <fieldset>
-            <input type="text" name="uname" id="uname" placeholder="Enter Username">
-            <span id="euname"></span>
+            <input type="text" name="email" id="email" placeholder="Enter email" required>
+            <span id="eemail"></span>
 
-            <input type="password" name="pass" id="pass" placeholder="Password">
+            <input type="password" name="pass" id="pass" placeholder="Password" required>
             <span id="epass"></span>
 
             <div class="login-btn">
-                <input type="button" value="Login" onclick="fun()">
+                <!-- <input type="button" value="Login" onclick="fun()"> -->
+                <button type="submit" class="login-btn">Log In</button>
             </div>
+            
 
             <div class="forgot-pass">
                 <a href="#">Forgotten Password?</a>
