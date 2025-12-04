@@ -17,7 +17,8 @@ include 'connect.php';
 if(!$run){ 
     echo "Data Insert Failed"; 
 }else{ 
-    echo "Data insertion Successful"; 
+    header("Location: success.html");
+        exit();
 } 
 ?>
 
