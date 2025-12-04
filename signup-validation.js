@@ -8,6 +8,7 @@ function signup(){
 
 }
 
+
 //First name validation
 
 document.getElementById("fname").addEventListener('input', () => { 
@@ -136,4 +137,7 @@ document.getElementById("pass").addEventListener('input', () => {
         document.getElementById("epass").style.color = ""; 
     } 
 }); 
+
+
+
 
