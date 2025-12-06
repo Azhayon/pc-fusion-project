@@ -130,3 +130,10 @@ html, body{
     font-size: 18px;
     cursor: pointer;
 }
+
+.full_body{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
