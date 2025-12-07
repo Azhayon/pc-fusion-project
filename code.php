@@ -9,7 +9,7 @@ include 'connect.php';
     $email = $_POST['email']; 
     $pass = $_POST['pass']; 
 
-    $sql = "INSERT INTO details (fname, surname, dob, gender, email, pass)
+    $sql = "INSERT INTO detail (fname, surname, dob, gender, email, pass)
             VALUES ('$fname', '$surname', '$dob', '$gender', '$email', '$pass')";
 
     $run = mysqli_query($con, $sql);
@@ -19,6 +19,8 @@ if(!$run){
 }else{ 
     header("Location: success.html");
         exit();
+
+    // echo"Data Insertion Successful";
 } 
 ?>
 
