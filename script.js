@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let selectedParts = {};
 
     // Fetch components from database
-    fetch("http://localhost/pc-fusion-project-main/getProducts.php")
+    fetch("http://localhost/pc-fusion-project/getProducts.php")
         .then(res => res.json())
         .then(data => loadComponents(data))
         .catch(err => console.log("Fetch Error:", err));

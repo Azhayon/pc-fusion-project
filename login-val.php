@@ -8,7 +8,7 @@ if(isset($_POST['email']) && isset($_POST['pass'])){
     $pass = $_POST['pass'];
 
     
-    $query = "SELECT * FROM detail WHERE email='$email' AND pass='$pass'";
+    $query = "SELECT * FROM information WHERE email='$email' AND pass='$pass'";
     $result = mysqli_query($con, $query);
 
     if(mysqli_num_rows($result) > 0){

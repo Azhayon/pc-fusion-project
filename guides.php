@@ -14,7 +14,7 @@ if (isset($_POST['search'])) {
 
     
     $sql = "SELECT buildtype, approx, cpu, gpu, ram, mobo, psu 
-            FROM bss 
+            FROM bsss 
             WHERE approx = '$approx' 
             ORDER BY approx ASC"; 
     $run = mysqli_query($con, $sql);
